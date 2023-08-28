@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       <link rel ="stylesheet" href="HeartFormCss.css">
+    <meta charset="UTF-8">
+  </head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id ="title" class="center-text"> Heart Application Form</h1>
+            <p id="description" class="description text-center">Answer the survey to my heart
+            </p>
+        </header>
+        <form id ="survey-form">
+            <div class="form-group">
+                <label name="name-label-" for ="name">Name:</label>
+                <input
+                    name="name"
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+        
+            <div class="form-group">
+                <label name="email-label-" for ="email">Email:</label>
+                <input
+                    name="email"
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+        
+            <div class="form-group">
+                <label name="age-label-" for ="age">Enter age:</label>
+                <input
+                    name="number"
+                    type="number"
+                    id="number"
+                    class="form-control"
+                    placeholder="Enter your age"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <p>How long do you plan to Stay?</p>
+                    <select id="dropdown" class="form-control" name="time" required>
+                        <option disabled selected value>Select one</option>
+                        <option name="1-5">1-5 months</option>
+                        <option name="5-10">5-10 months</option>
+                        <option name="1 year">1 year</option>
+                        <option name="1-5 year">1-5 years</option>
+                        <option name="5-10 year">5-10 years</option>
+                        <option name="forever">Forever</option>
+                    </select>       
+            </div>
+                <div class="form-group">
+                <p>Do you plan for us to get married?</p>
+                <label>
+                    <input 
+                        name="married"
+                        value="yes"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    >Yes</label
+                >
+
+                <label>
+                <input
+                        name="married"
+                        value="Definitely"
+                        type="radio"
+                        class="input-radio"
+
+                    >Definitely</label
+                >
+        
+                <label>
+                    <input
+                        name="married"
+                        value="Absolutely"
+                        type="radio"
+                        class="input-radio"
+        
+                    >Absolutely</label>
+
+            </div>
+            <div class="form-group">
+                <p>What are your Characteristics?   <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input
+                        name="Characteristics"
+                        value="Smart"
+                        class="input-checkbox"
+                        type="checkbox"
+                >Smart</label>
+
+                <label>
+                    <input
+                        name="Characteristics"
+                        value="Smart"
+                        class="input-checkbox"
+                        type="checkbox"
+                >Beautiful</label>
+
+                <label>
+                    <input
+                        name="Characteristics"
+                        value="Smart"
+                        class="input-checkbox"
+                        type="checkbox"
+                >Cute</label>
+
+                <label>
+                    <input
+                        name="Characteristics"
+                        value="Smart"
+                        class="input-checkbox"
+                        type="checkbox"
+                >Caring</label>
+
+                <label>
+                    <input
+                        name="Characteristics"
+                        value="Smart"
+                        class="input-checkbox"
+                        type="checkbox"
+                >Sweet</label>
+
+                <label>
+                    <input
+                        name="Characteristics"
+                        value="Smart"
+                        class="input-checkbox"
+                        type="checkbox"
+                >Loving</label>
+            </div>
+            <div>
+                <p>Tell me why should we be together...</p>
+                <label>
+                    <textarea
+                        name="comment"
+                        placeholder="We should be together because..."
+                        class="input-textarea"
+                        id="comment"
+                    
+                    ></textarea>
+                </label>
+            </div>
+            <div>
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>    
+                
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
